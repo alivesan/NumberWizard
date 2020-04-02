@@ -35,6 +35,7 @@ public class NumberWizard : MonoBehaviour
         {
             Debug.Log("Up Arrow key was pressed.");
             min = guess;
+            guess = (min + max) / 2;
             Debug.Log(guess);
         }
 
@@ -42,6 +43,7 @@ public class NumberWizard : MonoBehaviour
         {
             Debug.Log("Down Arrow key was pressed");
             max = guess;
+            guess = (min + max) / 2;
             Debug.Log(guess);
         }
 
